@@ -1,0 +1,42 @@
+header{
+    font-family: 'Bodoni Moda', serif;
+    color:#D7727C;
+    font-size: 40px;
+    margin-left:20px ;
+    margin-top: 20px;
+}
+
+
+body{
+    background-color:#E5CEB5;
+}
+
+
+.img-name{
+    height:400px;
+}
+
+.brand-name{
+    font-size:30px;
+    font-family: 'Bodoni Moda', serif;
+    color: #D7727C;
+}
+
+.time-description{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 15px;
+    color:#9C5D6F;
+}
+
+#couture-container{
+    margin-left: auto;
+    width:280px;
+    margin-right: auto;
+}
+
+#hautecouture-container{
+    justify-items: center;
+    justify-content: center;
+}
+
+
