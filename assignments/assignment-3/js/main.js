@@ -15,7 +15,7 @@ const fetchcouture = async () => {
         release_date: '334824',
     }
 
-    const myArray = ['movie', 348927, 'fdiosj'];
+    const myArray = ['couture', 348927, 'fdiosj'];
 
     const isReleased = true;
 
