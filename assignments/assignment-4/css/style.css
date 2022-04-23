@@ -1,0 +1,25 @@
+body{
+    background-color:#8d4599;
+    margin-top: auto;
+    margin-left:120px;
+}
+
+header{
+    color:white;
+    font-family: 'Righteous', cursive;
+    font-size: 90px;
+}
+
+
+#img{
+    height:20px;
+
+}
+
+
+
+
+
+#albumContainer{
+    height: 80px;
+}
