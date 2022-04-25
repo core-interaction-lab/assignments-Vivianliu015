@@ -24,7 +24,6 @@ const buildAlbums = albums=> {
         albumContainer.append(imgEl);
 
 })
-
 };
 
 fetchContent('https://interactionlab.space/data/assignment-4-1.json');
