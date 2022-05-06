@@ -1,0 +1,81 @@
+.content{
+    display: flex;
+}
+
+.flex-col{
+    flex: 1;
+}
+
+#todo-textarea{
+color:#dc7b82;
+background-color: whitesmoke;
+border-radius:20px;
+font-size: 27.5px;
+position:relative;
+left: 97px;
+top:50px;
+font-family: 'Montserrat Alternates', sans-serif;
+border:0px;
+
+
+}
+
+#add-todo-btn{
+color:	#317873;
+height:50px;
+width:50px;
+border-radius: 100px;
+position:relative;
+left: 400px;
+top:70px;
+background-color: 	#a0d6b4;
+border:0px;
+font-family: 'Montserrat Alternates', sans-serif;
+transition: transform .2s;
+
+
+}
+
+#add-todo-btn:hover{
+    background-color:#f0c7ca;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color:#317873;
+    transform: scale(1.4);
+
+
+
+}
+#todo-container{
+color:#dc7b82;
+font-size: 40px;
+font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+h1{
+    color:		#317873;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 80px;
+    margin-left: auto;
+    margin-top: auto;
+    position:relative;
+    left: 90px;
+    top:75px;
+
+}
+
+body{
+   background-color:  #a3c1ad;
+}
+
+h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    margin-left: auto;
+    margin-top: auto;
+    position:relative;
+    left: 90px;
+    color:	#5f9ea0;
+    top:27px;  
+
+}
