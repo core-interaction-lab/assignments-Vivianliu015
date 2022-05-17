@@ -1,81 +1,83 @@
-.content{
+.content {
     display: flex;
+    padding: 0 .5rem;
+    
 }
 
-.flex-col{
-    flex: 1;
+section {
+    padding: 0 .2rem;
+    
 }
 
-#todo-textarea{
-color:#dc7b82;
-background-color: whitesmoke;
-border-radius:20px;
-font-size: 27.5px;
-position:relative;
-left: 97px;
-top:50px;
-font-family: 'Montserrat Alternates', sans-serif;
-border:0px;
-
-
-}
-
-#add-todo-btn{
-color:	#317873;
-height:50px;
-width:50px;
-border-radius: 100px;
-position:relative;
-left: 400px;
-top:70px;
-background-color: 	#a0d6b4;
-border:0px;
-font-family: 'Montserrat Alternates', sans-serif;
-transition: transform .2s;
-
-
-}
-
-#add-todo-btn:hover{
-    background-color:#f0c7ca;
-    font-family: 'Montserrat Alternates', sans-serif;
-    color:#317873;
-    transform: scale(1.4);
-
-
-
-}
-#todo-container{
-color:#dc7b82;
-font-size: 40px;
-font-family: 'Montserrat Alternates', sans-serif;
-
-}
-
-h1{
-    color:		#317873;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 80px;
-    margin-left: auto;
-    margin-top: auto;
+.input-value {
+    display: inline-block;
+    min-width: 55px;
+    border-bottom: 2px solid white;
     position:relative;
-    left: 90px;
-    top:75px;
+    
+    
+   
+}
 
+form input {
+    display: block;
+    margin-bottom: .5rem;
+    position: relative;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 10%;
+    border: none;
+    color:purple;
+    
+}
+
+p{
+    color:#9393b3;
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+    width:600px;
+    position:relative;
+    left:340px;
+    top:100px;
+   
 }
 
 body{
-   background-color:  #a3c1ad;
+    background-color:#f5cdd1;
 }
 
-h2{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 20px;
-    margin-left: auto;
-    margin-top: auto;
+.title{
+    font-family: 'Secular One', sans-serif;
+    font-size: 50px;
+    color: #9393b3;
     position:relative;
-    left: 90px;
-    color:	#5f9ea0;
-    top:27px;  
+    left:340px;
+    top:100px;
 
+}
+
+.title:hover{
+    color:aliceblue;
+
+}
+
+
+
+button{
+    color:white;
+    background-color:#9393b3;
+    border:none;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    transition:0.3s;
+}
+button:hover{
+    background-color:#e2b4b8;
+
+}
+
+form{
+    position:relative;
+    top:300px;
+    left:300px;
 }
