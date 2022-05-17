@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html>
     <head>
-        <title>assignment 5</title>
-        <link rel="stylesheet" href="css/styles.css"/>
-        <meta name="viewport" content="width-device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jost&family=Secular+One&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Where do you want to go?</h1>
-            <h2>(write down the name of a place/country you want to visit)</h2>
-        </header>
         <main class="content">
-            <section class="flex-col">
-                <div>
-                <textarea id="todo-textarea"></textarea>
-            </div>
-                <button type="button" id="add-todo-btn">Add place</button>
+            <section>
+                <form id="madlib-form">
+                    <input type="text" name="input-1" placeholder="Name a place" required />
+                    <input type="text" name="input-2" placeholder="Name a person" required />
+                    <input type="text" name="input-3" placeholder="Name an emotion" required />
+                    <input type="text" name="input-4" placeholder="Name a level of difficulty" required />
+                    <input type="text" name="input-5" placeholder="Name an emotion" required />
+                    <button type="submit">Finish!</button>
+                </form>
             </section>
             <section>
-                <div id="todo-container"></div>
-
+                <div class="title">Interaction Lab</div>
+                <p>
+                    An interactio lab class was going on in <span class="input-value" data-input="input-1"></span>, 
+                    a class where students learned about javascript taught by
+                    <span class="input-value" data-input="input-2"></span>.
+                    The students are<span class="input-value" data-input="input-3"></span> 
+                   that they were able accomplish these things with javascript.
+                   Even though the process was
+                    <span class="input-value" data-input="input-4"></span> the students were <span class="input-value" data-input="input-5"></span> 
+                   about this class and want to say thank you to Michael.
+                </p>
+                
             </section>
         </main>
-
-<script src="js/main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
