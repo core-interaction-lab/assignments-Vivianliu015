@@ -1,67 +1,14 @@
-const todoTextarea = document.getElementById('todo-textarea');
-const addTodoBtn = document.getElementById('add-todo-btn');
-const todoContainer = document.getElementById('todo-container');
+const formEl = document.getElementById('madlib-form');
 
-const state = {
-    todoItems: [],
-};
+formEl.addEventListener('submit', e => {
+    e.preventDefault();
 
-const setTodoItems = items => {
-    state.todoItems = items;
-};
+    const formData = new FormData(formEl);
 
-const addTodoItem = item => {
-    const todoItemsCopy = state.todoItems.slice();
-    todoItemsCopy.push(item);
-    setTodoItems(todoItemsCopy);
-}
+    console.log(formData.get('input-1'));
+    const spanEls = document.querySelectorAll('.input-value');
 
-const removeTodoItem = index => {
-    const todoItemsCopy = state.todoItems.slice();
-        todoItemsCopy.splice(index,1);
-        setTodoItems(todoItemsCopy);
-
-}
-
-const buildTodoItem = (item,index) => {
-    const todoEl = document.createElement('article');
-    const textEl = document.createElement ('p');
-    const deleteBtn = document.createElement ('button');
-   
-    deleteBtn.innerHTML = 'Delete';
-    deleteBtn.addEventListener('click', evt=>{
-        removeTodoItem(index);
-        buildTodoItems(state.todoItems);
+    spanEls.forEach(span => {
+        span.innerHTML = formData.get(span.dataset.input);
     });
-
-
-
-    textEl.innerHTML = item;
-
-    todoEl.append(textEl,deleteBtn);
-    return todoEl;
-};
-
-const buildTodoItems = items => {
-    todoContainer.innerHTML='';
-    const todoItemEls = state.todoItems.
-    map(buildTodoItem);
-    todoContainer.append(...todoItemEls);
-
-};
-
-const main = () => {
-    addTodoBtn.addEventListener('click', evt => {
-        const todoValue = todoTextarea.value;
-        if(todoValue.length > 0) {
-            addTodoItem(todoValue);
-            buildTodoItems(state.todoItems);
-           
-        }
-
-
-    });
-
-};
-
-main();
+});
